@@ -1,160 +1,216 @@
-
-<p align="center" id="top">
-  <a href="https://getwren.ai/?utm_source=github&utm_medium=title&utm_campaign=readme">
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="./misc/wrenai_logo.png">
-      <img src="./misc/wrenai_logo_white.png" width="300px">
-    </picture>
-    <h1 align="center">Wren AI - Open-Source GenBI Agent</h1>
-  </a>
-</p>
-
-<p align="center">
-  <a aria-label="Follow us on X" href="https://x.com/getwrenai">
-    <img alt="" src="https://img.shields.io/badge/-@getwrenai-blue?style=for-the-badge&logo=x&logoColor=white&labelColor=gray&logoWidth=20">
-  </a>
-  <a aria-label="Releases" href="https://github.com/canner/WrenAI/releases">
-    <img alt="" src="https://img.shields.io/github/v/release/canner/WrenAI?logo=github&label=GitHub%20Release&color=blue&style=for-the-badge">
-  </a>
-  <a aria-label="License" href="https://github.com/Canner/WrenAI/blob/main/LICENSE">
-    <img alt="" src="https://img.shields.io/github/license/canner/WrenAI?color=blue&style=for-the-badge">
-  </a>
-  <a aria-label="GitHub Stars" href="https://github.com/Canner/WrenAI/stargazers">
-    <img alt="" src="https://img.shields.io/github/stars/canner/WrenAI?style=for-the-badge&logo=github&color=blue&label=Stars">
-  </a>
-  <a href="https://docs.getwren.ai">
-    <img src="https://img.shields.io/badge/docs-online-brightgreen?style=for-the-badge" alt="Docs">
-  </a>
-  <a aria-label="Join the community on GitHub" href="https://discord.gg/5DvshJqG8Z">
-    <img alt="" src="https://img.shields.io/badge/-JOIN%20THE%20COMMUNITY-blue?style=for-the-badge&logo=discord&logoColor=white&labelColor=grey&logoWidth=20">
-  </a>
-  <a aria-label="Canner" href="https://cannerdata.com/?utm_source=github&utm_medium=badge&utm_campaign=readme">
-    <img src="https://img.shields.io/badge/%F0%9F%A7%A1-Made%20by%20Canner-blue?style=for-the-badge">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://trendshift.io/repositories/9263" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9263" alt="Canner%2FWrenAI | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
-
-> Ask your database anything in plain English. Wren AI generates accurate SQL, charts, and BI insights — backed by a semantic layer that keeps LLM outputs grounded and trustworthy.
-
-<p align="center">
-  <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/bba9d37a-33e3-49ab-b7cb-32fd6dddc8d1" />
-</p>
-
-## 😍 Demos
-
-https://github.com/user-attachments/assets/f9c1cb34-5a95-4580-8890-ec9644da4160
-
-▶️ [Watch the full GenBI walkthrough](https://github.com/user-attachments/assets/90ad1d35-bb1e-490b-9676-b29863ff090b) — end-to-end from question to chart
-
-## 💡 Why a Semantic Layer?
-
-Feeding raw DDL to an LLM gets you SQL that looks right but means the wrong thing — "revenue" joins the wrong tables, "active user" uses the wrong filter. Wren AI's semantic layer (MDL) encodes your business definitions once, then every generated query is grounded in that shared understanding. The LLM doesn't guess what your metrics mean; the semantic layer tells it.
-
-## 🤖 Features
-
-|                    | What you get | Why it matters |
-|--------------------|--------------|----------------|
-| **Talk to Your Data** | Ask in any language → precise SQL & answers | Slash the SQL learning curve﻿ |
-| **GenBI Insights** | AI-written summaries, charts & reports | Decision-ready context in one click﻿ |
-| **Semantic Layer** | MDL models encode schema, metrics, joins | Keeps LLM outputs accurate & governed﻿ |
-| **Embed via API**  | Generate queries & charts inside your apps ([API Docs](https://wrenai.readme.io/reference/cloud-getting-started)) | Build custom agents, SaaS features, chatbots﻿ ([Streamlit Live Demo](https://huggingface.co/spaces/getWrenAI/wrenai-cloud-api-demo)) |
-
-🤩 [Learn more about GenBI](https://getwren.ai/genbi?utm_source=github&utm_medium=content&utm_campaign=readme)
-
-## 🔌 Data Sources
-
-| Cloud Warehouses | Databases | Query Engines |
-|-----------------|-----------|---------------|
-| BigQuery | PostgreSQL | Trino |
-| Snowflake | MySQL | Athena (Trino) |
-| Redshift | Microsoft SQL Server | DuckDB |
-| Databricks | ClickHouse | |
-| | Oracle | |
-
-Don't see yours? [Vote for it](https://github.com/Canner/WrenAI/discussions/327) — community votes drive our connector roadmap.
-
-## 🧠 LLM Models
-
-Wren AI works with any LLM provider you're already using:
-
-| Cloud APIs | Platform Services | Self-hosted |
-|-----------|-------------------|-------------|
-| OpenAI | Azure OpenAI | Ollama |
-| Anthropic | Google AI Studio (Gemini) | |
-| DeepSeek | Vertex AI (Gemini + Anthropic) | |
-| Groq | AWS Bedrock | |
-| | Databricks | |
-
-> [!TIP]
-> For best results, use a frontier model (GPT-4o, Claude Sonnet, Gemini Pro). Wren AI works with smaller and local models too — accuracy scales with model capability. See [configuration examples](https://github.com/Canner/WrenAI/tree/main/wren-ai-service/docs/config_examples) for setup guides.
-
-## 🚀 Getting Started
-
-Three ways to get started — pick what fits:
-
-| Option | Best for | Link |
-|--------|----------|------|
-| **Self-hosted (Docker)** | Full control, local data | [Installation guide](http://docs.getwren.ai/oss/installation?utm_source=github&utm_medium=content&utm_campaign=readme) |
-| **Wren AI Cloud** | Try it without setup | [getwren.ai](https://getwren.ai/?utm_source=github&utm_medium=content&utm_campaign=readme) |
-
-Compare [OSS vs. Cloud plans](https://docs.getwren.ai/oss/overview/cloud_vs_self_host). Full documentation at [docs.getwren.ai](https://docs.getwren.ai/oss/overview/introduction?utm_source=github&utm_medium=content&utm_campaign=readme).
-
-<p align="center">
-  <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6555f539-9ef2-485d-9135-0071741fda96" />
-</p>
-
-## 🏗️ Architecture
-
-<p align="center">
-  <img width="1011" height="682" alt="wrenai-architecture" src="https://github.com/user-attachments/assets/e99b999f-9912-4fa7-921a-9c86b6b83354" />
-</p>
-
-User questions flow from the Next.js UI → Apollo GraphQL → AI Service (RAG + LLM) → Wren Engine (semantic query execution) → your database. The semantic layer (MDL) sits at the center, making sure the LLM's SQL reflects your actual business definitions.
-
-👉 [Deep dive into the design](https://getwren.ai/post/how-we-design-our-semantic-engine-for-llms-the-backbone-of-the-semantic-layer-for-llm-architecture?utm_source=github&utm_medium=content&utm_campaign=readme)
-
-## 🧑‍💻 For Developers
-
-WrenAI is a full-stack AI system with interesting problems at every layer — semantic modeling, RAG retrieval, LLM-driven SQL generation, and query execution across heterogeneous data sources. Here's what the stack actually looks like under the hood:
-
-| Layer | What it does |
-|-------|-------------|
-| **wren-ui** | Next.js + Apollo GraphQL — semantic modeling UI and the BFF that wires everything together |
-| **wren-ai-service** | Python/FastAPI pipeline — intent classification, vector retrieval from Qdrant, LLM prompting, and SQL correction loops |
-| **[wren-engine](https://github.com/Canner/wren-engine)** | Rust + Apache DataFusion — the query execution core that resolves MDL semantics (metrics, joins, access controls) before SQL reaches the database |
-
-**[wren-engine](https://github.com/Canner/wren-engine)** is a separate open-source project and the part of the stack closest to the metal. It's where MDL definitions get translated into actual query plans across 15+ data sources. If you work with Rust, DataFusion, or database connectors, it's worth a look — the codebase is approachable and there are real unsolved problems around query planning, semantic resolution, and MCP (Model Context Protocol) agent integration.
-
-Some areas where contributions tend to have the most impact across both repos:
-
-- **Data source connectors** — wren-engine supports 15+ sources; new connectors are always useful
-- **MCP integration** — wren-engine exposes an MCP server; agent-native workflows are still early and evolving
-- **SQL generation quality** — prompt engineering, correction loop heuristics, and eval harnesses in wren-ai-service
-- **Semantic layer tooling** — MDL schema inference, validation, and developer ergonomics in wren-ui
-
-## 🛠️ Contribution
-
-1.	Read [Contribution Guidelines](https://github.com/Canner/WrenAI/blob/main/CONTRIBUTING.md) for setup & PR guidelines.
-2.	Open an issue for bugs, feature requests, or discussion.
-3.	If Wren AI is useful to you, a ⭐ goes a long way — it helps more people find the project.
-
-## ⭐️ Community
-
-- Join 1.7k+ developers in our [Discord](https://discord.gg/5DvshJqG8Z) for real-time help and roadmap previews.
-- Visit [GitHub Issues](https://github.com/Canner/WrenAI/issues) for bugs and feature requests.
-- Explore our [public roadmap](https://wrenai.notion.site/) to see what's coming next.
-- [Subscribe to our blog](https://www.getwren.ai/blog/?utm_source=github&utm_medium=content&utm_campaign=readme) · [Follow us on LinkedIn](https://www.linkedin.com/company/wrenai)
-
-We follow a [Code of Conduct](./CODE_OF_CONDUCT.md) to keep the community welcoming for everyone.
-
-## 🎉 Our Contributors
-<a href="https://github.com/canner/wrenAI/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Canner/WrenAI" />
+<div align="center" id="top">
+<a href="https://getwren.ai">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./misc/wrenai_logo_white.png">
+    <img src="./misc/wrenai_logo.png" width="300px" alt="WrenAI">
+  </picture>
 </a>
 
-<p align="right">
-  <a href="#top">⬆️ Back to Top</a>
-</p>
+### The open context layer for AI agents over business data.
+
+*Your agent doesn't know what your data means. We fix that.*
+
+[Docs](https://docs.getwren.ai) · [Discord](https://discord.gg/5DvshJqG8Z) · [Vision](https://www.getwren.ai/post/the-missing-context-layer-for-ai-agents-over-business-data) · [Blog](https://www.getwren.ai/blog)
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/wren-engine?label=wren-engine)](https://pypi.org/project/wren-engine/)
+[![GitHub Release](https://img.shields.io/github/v/release/Canner/WrenAI?logo=github&label=release)](https://github.com/Canner/WrenAI/releases)
+[![Discord](https://img.shields.io/discord/1227143286951514152?logo=discord&label=Discord)](https://discord.gg/5DvshJqG8Z)
+[![Last commit](https://img.shields.io/github/last-commit/Canner/WrenAI)](https://github.com/Canner/WrenAI/commits/main)
+[![Follow on X](https://img.shields.io/badge/follow-@getwrenai-blue?logo=x&logoColor=white)](https://x.com/getwrenai)
+[![Made by Canner](https://img.shields.io/badge/made_by-Canner-blue)](https://cannerdata.com)
+![Stars](https://img.shields.io/github/stars/Canner/WrenAI?style=social)
+
+<a href="https://trendshift.io/repositories/9263" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9263" alt="Canner/WrenAI | Trendshift" width="250" height="55" /></a>
+
+</div>
+
+> 📣 **2026-05-07** — Wren Engine has merged into this repo under [`core/`](./core). The previous `Canner/wren-engine` repo is archived. The previous WrenAI GenBI app is preserved on the [`legacy/v1`](https://github.com/Canner/WrenAI/tree/legacy/v1) branch (tag `v1-final`). [Read the announcement →](https://github.com/Canner/WrenAI/discussions/2205)
+
+<!--
+  📺 HERO DEMO (place here)
+  ─────────────────────────
+  Suggested: a 5–10 second silent loop showing:
+    1. Terminal: `wren ask "who are our top 10 customers this quarter?"`
+    2. Agent fetches context (memory + MDL) — visible reasoning trace
+    3. Final SQL + result table
+  Format: .gif (≤2 MB) or .mp4 (autoplay-muted).
+  Save under  /assets/wrenai-demo.gif  and use the line below:
+
+  <img src="./assets/wrenai-demo.gif" alt="Wren AI in action" width="820" />
+-->
+
+---
+
+## What WrenAI is
+
+WrenAI is the **open context layer** that gives your agents what schemas don't: business semantics, examples, memory, governance, and — soon — the unstructured corporate knowledge that lives in your docs, wikis, and chat threads. Built for the agent frameworks you already use. 
+
+![Wren AI architecture](./misc/wren-ai-architecture.png)
+
+## Why agent builders pick WrenAI
+
+- **Open by default** — Open-sourced core, SDK, and skills through Apache-2.0 license.
+- **Built for AI agents** — Skills, agentic architecture, context retrieval are first-class. Ships as SDKs for the agent frameworks that engineers already use.
+- **Correctness as primitives** — rich schema retrieval, dry-plan validation, structured errors with hints, value profiling, eval runner. The agent orchestrates; the trace lives in the agent's reasoning.
+- **Reviewable, reproducible context** — every definition, example, and mapping is versionable and evidence-linked. Git-friendly.
+- **Sits on top of your existing stack** — warehouse, transformation pipelines, your existing semantic layer. Not another tool to maintain.
+
+## With & Without Wren AI
+
+Agents are everywhere. Claude Code, Cursor, ChatGPT, Aider, LangChain pipelines, Pydantic AI flows, in-house copilots, customer-facing apps. None of them should have to rediscover your business logic from scratch. With Wren AI, "the context layer," they query through a standalone, shared interface usable by every agent and person, not gated behind a single vendor's UI and architecture.
+
+<img width="1430" height="753" alt="before & after" src="https://github.com/user-attachments/assets/ab54ee9f-b652-4826-b6f5-0c22f601419e" />
+
+## Quickstart
+
+WrenAI is **agent-driven by design**: you install the skill bundle once, then let your AI coding agent (Claude Code, Openclaw, Hermes, Codex, etc.) drive the rest — Python deps, DB connection, project scaffold, and first query.
+
+### 1. Install the skill bundle
+
+Skills are workflow guides that teach AI coding agents (Claude Code, Openclaw, Hermes, Codex, etc.) how to drive the Wren CLI for you.
+
+```bash
+npx skills add Canner/WrenAI --skill '*'
+```
+
+Have multiple AI coding agents installed and want the skills available in all of them? Pass `--agent '*'`:
+
+```bash
+npx skills add Canner/WrenAI --skill '*' --agent '*'
+```
+
+Or via the install script:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Canner/WrenAI/main/skills/install.sh | bash
+```
+
+See the [Skills reference](https://docs.getwren.ai/oss/reference/skills) for the full list of skills installed and what each one does.
+
+### 2. Ask your agent to set things up
+
+Open your agent in a project directory and ask:
+
+Use the `/wren-onboarding` skill to install and set up Wren AI.
+
+The agent will check your environment, install `wren-engine`, create a connection profile, scaffold the project, and run a first query — all in one flow.
+
+### 3. (Optional) Enrich the project
+
+Once onboarding finishes, give your project the business context schemas can't carry:
+
+Use the `/wren-enrich-context` skill in grill mode.
+
+Two modes: **grill** (one question at a time, you in the loop) or **auto-pilot** (agent reads `<project>/raw/` and proposes). Both modes write to MDL, instructions, queries, and memory — all reviewable, all Git-friendly.
+
+### 4. Ask questions
+
+```bash
+# Ask any question
+"who are our top 10 customers by sales this quarter?"
+```
+
+Or just ask your agent in natural language — it uses the context layer to resolve schema, recall similar past queries, and write governed SQL.
+
+**Want to try it without your own database?** Ask your agent to run `/wren-onboarding` with the bundled `jaffle_shop` sample dataset — same flow, but you'll be querying a real warehouse end-to-end in a couple of minutes.
+
+## Two beats: scaffold fast, enrich deep
+
+```bash
+/wren-onboarding         # Scaffold a Wren project from your DB (agent-driven)
+/wren-enrich-context     # One skill, two modes: (Under development)
+                         #   grill      — one question at a time, you in the loop
+                         #   auto-pilot — agent reads <project>/raw/ and proposes
+wren ask "..."           # Query through the context layer
+```
+
+Fast at first. Deep when you need it. Always reviewable and Git-friendly.
+
+<!--
+  📷 OPTIONAL: 2-up screenshot showing grill mode (left) vs auto-pilot mode (right).
+  Save under  /assets/two-beats.png
+-->
+
+## What's Included
+
+- **Modeling Definition Language (MDL)** — models, columns, relationships, views, cubes, metrics, row-level / column-level access control (RLAC / CLAC)
+- **Engine** — Apache DataFusion based, 22+ data sources
+- **Memory & examples** — LanceDB-backed, hybrid retrieval, versionable
+- **Agent SDK** — `wren-langchain` (LangChain / LangGraph), `wren-pydantic`; reference Python integration for other stacks
+- **Governed execution primitives** — functions, dry-plan, row limits, access control
+
+## What's next
+
+- **Context enrichment skill** — `/wren-enrich-context` (grill + auto-pilot modes) hardened across MDL, instructions, queries, and memory
+- **End-to-end correctness primitives** — value profiling, rich retrieval, structured errors, golden eval runner
+- **Agent-native distribution** — first-class SDKs across major agent frameworks; see [GitHub Discussions](https://github.com/Canner/WrenAI/discussions) for what's prioritized next
+- **Full governed execution** — audit logs, rate limits, approval workflow, data-flow inspector
+
+<!-- TODO: vision_paper_en.md is currently at .tmp/roadmap-discuss/vision_paper_en.md — move to a published path (e.g. docs/vision-paper.md or repo root) and update this link before publishing. -->
+Full roadmap and design notes: see the [vision paper](./vision_paper_en.md).
+
+## Documentation
+
+- [Quickstart](https://docs.getwren.ai/oss/get_started/quickstart) — from skill install to first answer
+- [Concepts](https://docs.getwren.ai/oss/concepts/what_is_context) — what context is, what MDL is, how memory works
+- [Connect a database](https://docs.getwren.ai/oss/guides/connect/overview) — Postgres, BigQuery, Snowflake, DuckDB, and more
+- [Agent SDKs](https://docs.getwren.ai/oss/sdk/overview) — what's shipping today, what's next
+
+## Community
+
+- 💬 [Discord](https://discord.gg/5DvshJqG8Z) — chat with the team and other builders
+- 🐙 [GitHub Discussions](https://github.com/Canner/WrenAI/discussions) — design conversations, RFCs, longer threads
+- 🐦 [Twitter / X](https://x.com/getwrenai) — release notes and short updates
+- 🗞 [Blog](https://www.getwren.ai/blog) — vision, post-mortems, deep dives
+
+## Contributing
+
+We build in the open. Issues, PRs, connector contributions, SDK integrations, docs fixes — all welcome.
+
+- [Contributor guide](./CONTRIBUTING.md)
+- [Connector ecosystem program](./docs/contributing-a-connector.md) — three-tier ownership: official, community-blessed, community-owned
+- [Architecture map](./docs/architecture.md) — find the right place to land your change
+- Looking for somewhere to start? Try the [`good first issue`](https://github.com/Canner/WrenAI/labels/good%20first%20issue) label.
+
+<details>
+<summary><strong>Project structure</strong> — click to expand</summary>
+
+```
+core/
+  wren-core/         Rust semantic engine (Apache DataFusion)
+  wren-core-base/    Shared manifest types + MDL builder
+  wren-core-py/      Python bindings (PyPI: wren-core)
+  wren-core-wasm/    WebAssembly build (npm: wren-core-wasm)
+  wren/              Python SDK and CLI (PyPI: wren-engine)
+  wren-mdl/          MDL JSON schema
+sdk/
+  wren-langchain/    Reference agent SDK integration
+skills/              Agent skills for context authoring
+docs/                Module documentation
+examples/            Example projects
+```
+
+</details>
+
+## Contributors
+
+<a href="https://github.com/Canner/WrenAI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Canner/WrenAI" alt="WrenAI contributors" />
+</a>
+
+## License
+
+Apache 2.0. See [LICENSE](./LICENSE).
+
+---
+
+<div align="center">
+
+*Come build the context layer with us.*
+
+**If WrenAI helps you, drop a ⭐ — it genuinely helps us grow!**
+
+<p><a href="#top">⬆️ Back to top</a></p>
+
+</div>
